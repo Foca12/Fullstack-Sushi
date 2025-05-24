@@ -1,0 +1,36 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, rgb(13, 19, 24), rgb(0, 0, 0));
+}
+
+main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 0;
+}
+
+/* Card responsive */
+@media (max-width: 768px) {
+  .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Navbar fixes */
+.navbar {
+  flex-shrink: 0;
+}
+
+/* Immagini card */
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
